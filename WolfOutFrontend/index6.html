@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - WolfOutLadder</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">WolfOutLadder</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <!--<li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a>-->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <!--<li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>-->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <!--<li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a> -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index8.html">
+          <i class="bi bi-grid"></i>
+          <span>800-1000</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="index1.html">
+          <i class="bi bi-grid"></i>
+          <span>1000-1200</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>1200-1400</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="index4.html">
+          <i class="bi bi-grid"></i>
+          <span>1400-1600</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="index6.html">
+          <i class="bi bi-grid"></i>
+          <span>1600-1800</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <!--<li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Alerts</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Accordion</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-badges.html">
+              <i class="bi bi-circle"></i><span>Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Buttons</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>Cards</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Carousel</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-list-group.html">
+              <i class="bi bi-circle"></i><span>List group</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-modal.html">
+              <i class="bi bi-circle"></i><span>Modal</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tabs.html">
+              <i class="bi bi-circle"></i><span>Tabs</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-pagination.html">
+              <i class="bi bi-circle"></i><span>Pagination</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-progress.html">
+              <i class="bi bi-circle"></i><span>Progress</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-spinners.html">
+              <i class="bi bi-circle"></i><span>Spinners</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-tooltips.html">
+              <i class="bi bi-circle"></i><span>Tooltips</span>
+            </a>
+          </li>
+        </ul>
+      </li>-->
+
+      <!--<li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html">
+              <i class="bi bi-circle"></i><span>Form Elements</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-layouts.html">
+              <i class="bi bi-circle"></i><span>Form Layouts</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span>Form Editors</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-validation.html">
+              <i class="bi bi-circle"></i><span>Form Validation</span>
+            </a>
+          </li>
+        </ul>
+      </li> -->
+
+      <!--<li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="tables-general.html">
+              <i class="bi bi-circle"></i><span>General Tables</span>
+            </a>
+          </li>
+          <li>
+            <a href="tables-data.html">
+              <i class="bi bi-circle"></i><span>Data Tables</span>
+            </a>
+          </li>
+        </ul>
+      </li>-->
+
+      <!--<li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="charts-chartjs.html">
+              <i class="bi bi-circle"></i><span>Chart.js</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>ApexCharts</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span>ECharts</span>
+            </a>
+          </li>
+        </ul>
+      </li>-->
+
+      <!--<li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-remix.html">
+              <i class="bi bi-circle"></i><span>Remix Icons</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-boxicons.html">
+              <i class="bi bi-circle"></i><span>Boxicons</span>
+            </a>
+          </li>
+        </ul>
+      </li>-->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-error-404.html">
+          <i class="bi bi-dash-circle"></i>
+          <span>Error 404</span>
+        </a>
+      </li><!-- End Error 404 Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>1600-1800</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">1600-1800</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+    
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <!--<div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Sales <span>| Today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> -->
+
+            <!-- Revenue Card -->
+            <!--<div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>$3,264</h6>
+                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> -->
+
+            <!-- Customers Card -->
+            <!--<div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Customers <span>| This Year</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>1244</h6>
+                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div> -->
+
+            <!-- Reports -->
+            <!--<div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Reports <span>/Today</span></h5>-->
+
+                  <!-- Line Chart -->
+                  <!--<div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Sales',
+                          data: [31, 40, 28, 51, 42, 82, 56],
+                        }, {
+                          name: 'Revenue',
+                          data: [11, 32, 45, 32, 34, 52, 41]
+                        }, {
+                          name: 'Customers',
+                          data: [15, 11, 32, 18, 9, 24, 11]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>-->
+                  <!-- End Line Chart -->
+
+                <!--</div>
+
+              </div>
+            </div>-->
+
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Problems </h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Problem</th>
+                        <th scope="col">Tag</th>
+                      
+                        <th scope="col">Solved Count</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1365/C" target="_blank" class="text-primary">Rotation Matching</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>21318</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1598/C" target="_blank" class="text-primary">Delete Two Elements</a></td>
+                        <td>data structures, dp, implementation, math, two pointers</td>
+                        <td>18689</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1850/E" target="_blank" class="text-primary">Cardboard for Pictures</a></td>
+                        <td>binary search, geometry, implementation, math</td>
+                        <td>17644</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1399/D" target="_blank" class="text-primary">Binary String To Subsequences</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>16929</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1393/B" target="_blank" class="text-primary">Applejack and Storages</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>15810</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1857/D" target="_blank" class="text-primary">Strong Vertices</a></td>
+                        <td>math, sortings, trees</td>
+                        <td>15716</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1535/C" target="_blank" class="text-primary">Unstable String</a></td>
+                        <td>binary search, dp, greedy, implementation, strings, two pointers</td>
+                        <td>15364</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1451/C" target="_blank" class="text-primary">String Equality</a></td>
+                        <td>dp, greedy, hashing, implementation, strings</td>
+                        <td>14614</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1373/D" target="_blank" class="text-primary">Maximum Sum on Even Positions</a></td>
+                        <td>divide and conquer, dp, greedy, implementation</td>
+                        <td>14356</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1419/C" target="_blank" class="text-primary">Killjoy</a></td>
+                        <td>greedy, implementation, math</td>
+                        <td>14314</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1862/D" target="_blank" class="text-primary">Ice Cream Balls</a></td>
+                        <td>binary search, combinatorics, constructive algorithms, math</td>
+                        <td>14086</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1706/C" target="_blank" class="text-primary">Qpwoeirut And The City</a></td>
+                        <td>dp, flows, greedy, implementation</td>
+                        <td>13563</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1176/C" target="_blank" class="text-primary">Lose it!</a></td>
+                        <td>dp, greedy, implementation</td>
+                        <td>13453</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1844/C" target="_blank" class="text-primary">Particles</a></td>
+                        <td>dp, greedy, implementation, math</td>
+                        <td>13387</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1844/C" target="_blank" class="text-primary">Particles</a></td>
+                        <td>dp, greedy, implementation, math</td>
+                        <td>13387</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1732/B" target="_blank" class="text-primary">Ugu</a></td>
+                        <td>brute force, dp, greedy, implementation</td>
+                        <td>13197</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td><a href="https://codeforces.com/problemset/problem/349/B" target="_blank" class="text-primary">Color the Fence</a></td>
+                        <td>data structures, dp, greedy, implementation</td>
+                        <td>12994</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1851/D" target="_blank" class="text-primary">Prefix Permutation Sums</a></td>
+                        <td>implementation, math</td>
+                        <td>12682</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1719/C" target="_blank" class="text-primary">Fighting Tournament</a></td>
+                        <td>binary search, data structures, implementation, two pointers</td>
+                        <td>12116</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td><a href="https://codeforces.com/problemset/problem/276/D" target="_blank" class="text-primary">Little Girl and Maximum XOR</a></td>
+                        <td>bitmasks, dp, greedy, implementation, math</td>
+                        <td>12115</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1845/C" target="_blank" class="text-primary">Strong Password</a></td>
+                        <td>binary search, dp, greedy, strings</td>
+                        <td>11862</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1333/C" target="_blank" class="text-primary">Eugene and an array</a></td>
+                        <td>binary search, data structures, implementation, two pointers</td>
+                        <td>11799</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1537/E1" target="_blank" class="text-primary">Erase and Extend (Easy Version)</a></td>
+                        <td>binary search, brute force, dp, greedy, hashing, implementation, string suffix structures, strings, two pointers</td>
+                        <td>11506</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td><a href="https://codeforces.com/problemset/problem/460/B" target="_blank" class="text-primary">Little Dima and Equation</a></td>
+                        <td>brute force, implementation, math, number theory</td>
+                        <td>11343</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1864/C" target="_blank" class="text-primary">Divisor Chain</a></td>
+                        <td>bitmasks, constructive algorithms, math, number theory</td>
+                        <td>11021</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">26</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1860/C" target="_blank" class="text-primary">Game on Permutation</a></td>
+                        <td>data structures, dp, games, greedy</td>
+                        <td>10683</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1626/C" target="_blank" class="text-primary">Monsters And Spells</a></td>
+                        <td>binary search, data structures, dp, greedy, implementation, math, two pointers</td>
+                        <td>10201</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">28</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1811/E" target="_blank" class="text-primary">Living Sequence</a></td>
+                        <td>binary search, dp, math, number theory</td>
+                        <td>10175</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">29</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1795/C" target="_blank" class="text-primary">Tea Tasting</a></td>
+                        <td>binary search, data structures, implementation</td>
+                        <td>10150</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">30</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1189/C" target="_blank" class="text-primary">Candies!</a></td>
+                        <td>data structures, dp, implementation, math</td>
+                        <td>9988</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">31</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1355/C" target="_blank" class="text-primary">Count Triangles</a></td>
+                        <td>binary search, implementation, math, two pointers</td>
+                        <td>9874</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">32</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1748/C" target="_blank" class="text-primary">Zero-Sum Prefixes</a></td>
+                        <td>brute force, data structures, dp, greedy, implementation</td>
+                        <td>9476</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">33</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1858/B" target="_blank" class="text-primary">The Walkway</a></td>
+                        <td>brute force, dp, greedy, math, number theory</td>
+                        <td>9448</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">34</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1867/C" target="_blank" class="text-primary">Salyg1n and the MEX Game</a></td>
+                        <td>constructive algorithms, data structures, games, greedy, interactive</td>
+                        <td>9436</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">35</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1478/C" target="_blank" class="text-primary">Nezzar and Symmetric Array</a></td>
+                        <td>implementation, math, sortings</td>
+                        <td>9128</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">36</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1870/C" target="_blank" class="text-primary">Colorful Table</a></td>
+                        <td>binary search, data structures, dp, implementation, math, two pointers</td>
+                        <td>9117</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">37</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1051/C" target="_blank" class="text-primary">Vasya and Multisets</a></td>
+                        <td>brute force, dp, greedy, implementation, math</td>
+                        <td>8919</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">38</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1659/C" target="_blank" class="text-primary">Line Empire</a></td>
+                        <td>binary search, brute force, dp, greedy, implementation, math</td>
+                        <td>8868</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">39</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1873/G" target="_blank" class="text-primary">ABBC or BACB</a></td>
+                        <td>constructive algorithms, greedy</td>
+                        <td>8810</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">40</th>
+                        <td><a href="https://codeforces.com/problemset/problem/282/C" target="_blank" class="text-primary">XOR and OR</a></td>
+                        <td>constructive algorithms, implementation, math</td>
+                        <td>8771</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">41</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1370/D" target="_blank" class="text-primary">Odd-Even Subsequence</a></td>
+                        <td>binary search, dp, dsu, greedy, implementation</td>
+                        <td>8680</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">42</th>
+                        <td><a href="https://codeforces.com/problemset/problem/678/C" target="_blank" class="text-primary">Joty and Chocolate</a></td>
+                        <td>implementation, math, number theory</td>
+                        <td>8484</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">43</th>
+                        <td><a href="https://codeforces.com/problemset/problem/570/C" target="_blank" class="text-primary">Replacement</a></td>
+                        <td>constructive algorithms, data structures, implementation</td>
+                        <td>8474</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">44</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1408/C" target="_blank" class="text-primary">Discrete Acceleration</a></td>
+                        <td>binary search, dp, implementation, math, two pointers</td>
+                        <td>8374</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">45</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1739/C" target="_blank" class="text-primary">Card Game</a></td>
+                        <td>combinatorics, constructive algorithms, dp, games</td>
+                        <td>8146</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">46</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1554/C" target="_blank" class="text-primary">Mikasa</a></td>
+                        <td>binary search, bitmasks, greedy, implementation</td>
+                        <td>8120</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">47</th>
+                        <td><a href="https://codeforces.com/problemset/problem/548/B" target="_blank" class="text-primary">Mike and Fun</a></td>
+                        <td>brute force, dp, greedy, implementation</td>
+                        <td>8060</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">48</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1851/E" target="_blank" class="text-primary">Nastya and Potions</a></td>
+                        <td>dfs and similar, dp, graphs, sortings</td>
+                        <td>7968</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">49</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1038/D" target="_blank" class="text-primary">Slime</a></td>
+                        <td>dp, greedy, implementation</td>
+                        <td>7872</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">50</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1491/C" target="_blank" class="text-primary">Pekora and Trampoline</a></td>
+                        <td>brute force, data structures, dp, greedy, implementation</td>
+                        <td>7459</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">51</th>
+                        <td><a href="https://codeforces.com/problemset/problem/416/C" target="_blank" class="text-primary">Booking System</a></td>
+                        <td>binary search, dp, greedy, implementation</td>
+                        <td>7372</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">52</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1278/C" target="_blank" class="text-primary">Berry Jam</a></td>
+                        <td>data structures, dp, greedy, implementation</td>
+                        <td>7336</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">53</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1084/C" target="_blank" class="text-primary">The Fair Nut and String</a></td>
+                        <td>combinatorics, dp, implementation</td>
+                        <td>7184</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">54</th>
+                        <td><a href="https://codeforces.com/problemset/problem/581/C" target="_blank" class="text-primary">Developing Skills</a></td>
+                        <td>implementation, math, sortings</td>
+                        <td>7113</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">55</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1209/C" target="_blank" class="text-primary">Paint the Digits</a></td>
+                        <td>constructive algorithms, greedy, implementation</td>
+                        <td>7067</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">56</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1043/C" target="_blank" class="text-primary">Smallest Word</a></td>
+                        <td>constructive algorithms, greedy, implementation</td>
+                        <td>6600</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">57</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1811/D" target="_blank" class="text-primary">Umka and a Long Flight</a></td>
+                        <td>constructive algorithms, implementation, math</td>
+                        <td>6317</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">58</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1185/D" target="_blank" class="text-primary">Extra Element</a></td>
+                        <td>implementation, math</td>
+                        <td>6277</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">59</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1620/C" target="_blank" class="text-primary">BA-String</a></td>
+                        <td>brute force, dp, greedy, implementation, math</td>
+                        <td>6034</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">60</th>
+                        <td><a href="https://codeforces.com/problemset/problem/864/C" target="_blank" class="text-primary">Bus</a></td>
+                        <td>greedy, implementation, math</td>
+                        <td>5751</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">61</th>
+                        <td><a href="https://codeforces.com/problemset/problem/858/C" target="_blank" class="text-primary">Did you mean...</a></td>
+                        <td>dp, greedy, implementation</td>
+                        <td>5318</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">62</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1737/C" target="_blank" class="text-primary">Ela and Crickets</a></td>
+                        <td>constructive algorithms, games, implementation, math</td>
+                        <td>5248</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">63</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1062/C" target="_blank" class="text-primary">Banh-mi</a></td>
+                        <td>greedy, implementation, math</td>
+                        <td>5233</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">64</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1793/D" target="_blank" class="text-primary">Moscow Gorillas</a></td>
+                        <td>binary search, dp, greedy, implementation, math, two pointers</td>
+                        <td>5232</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">65</th>
+                        <td><a href="https://codeforces.com/problemset/problem/777/D" target="_blank" class="text-primary">Cloud of Hashtags</a></td>
+                        <td>binary search, greedy, implementation, strings</td>
+                        <td>4816</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">66</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1704/D" target="_blank" class="text-primary">Magical Array</a></td>
+                        <td>constructive algorithms, hashing, implementation, math</td>
+                        <td>4640</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">67</th>
+                        <td><a href="https://codeforces.com/problemset/problem/353/C" target="_blank" class="text-primary">Find Maximum</a></td>
+                        <td>implementation, math, number theory</td>
+                        <td>4581</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">68</th>
+                        <td><a href="https://codeforces.com/problemset/problem/527/D" target="_blank" class="text-primary">Clique Problem</a></td>
+                        <td>data structures, dp, greedy, implementation, sortings</td>
+                        <td>4455</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">69</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1420/C2" target="_blank" class="text-primary">PokÃ©mon Army (hard version)</a></td>
+                        <td>data structures, divide and conquer, dp, greedy, implementation</td>
+                        <td>4325</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">70</th>
+                        <td><a href="https://codeforces.com/problemset/problem/507/C" target="_blank" class="text-primary">Guess Your Way Out!</a></td>
+                        <td>implementation, math, trees</td>
+                        <td>4174</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">71</th>
+                        <td><a href="https://codeforces.com/problemset/problem/724/B" target="_blank" class="text-primary">Batch Sort</a></td>
+                        <td>brute force, greedy, implementation, math</td>
+                        <td>3886</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">72</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1638/D" target="_blank" class="text-primary">Big Brush</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>3879</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">73</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1716/C" target="_blank" class="text-primary">Robot in a Hallway</a></td>
+                        <td>data structures, dp, greedy, implementation, ternary search</td>
+                        <td>3821</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">74</th>
+                        <td><a href="https://codeforces.com/problemset/problem/758/C" target="_blank" class="text-primary">Unfair Poll</a></td>
+                        <td>binary search, constructive algorithms, implementation, math</td>
+                        <td>3777</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">75</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1363/D" target="_blank" class="text-primary">Guess The Maximums</a></td>
+                        <td>binary search, implementation, interactive, math</td>
+                        <td>3722</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">76</th>
+                        <td><a href="https://codeforces.com/problemset/problem/746/C" target="_blank" class="text-primary">Tram</a></td>
+                        <td>constructive algorithms, implementation, math</td>
+                        <td>3635</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">77</th>
+                        <td><a href="https://codeforces.com/problemset/problem/160/C" target="_blank" class="text-primary">Find Pair</a></td>
+                        <td>implementation, math, sortings</td>
+                        <td>3299</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">78</th>
+                        <td><a href="https://codeforces.com/problemset/problem/280/C" target="_blank" class="text-primary">Game on Tree</a></td>
+                        <td>implementation, math, probabilities, trees</td>
+                        <td>3159</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">79</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1419/E" target="_blank" class="text-primary">Decryption</a></td>
+                        <td>constructive algorithms, implementation, math, number theory</td>
+                        <td>3045</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">80</th>
+                        <td><a href="https://codeforces.com/problemset/problem/893/D" target="_blank" class="text-primary">Credit Card</a></td>
+                        <td>data structures, dp, greedy, implementation</td>
+                        <td>2810</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">81</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1718/B" target="_blank" class="text-primary">Fibonacci Strings</a></td>
+                        <td>greedy, implementation, math, number theory</td>
+                        <td>2683</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">82</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1271/D" target="_blank" class="text-primary">Portals</a></td>
+                        <td>data structures, dp, greedy, implementation, sortings</td>
+                        <td>2575</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">83</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1551/D2" target="_blank" class="text-primary">Domino (hard version)</a></td>
+                        <td>constructive algorithms, implementation, math</td>
+                        <td>2541</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">84</th>
+                        <td><a href="https://codeforces.com/problemset/problem/911/E" target="_blank" class="text-primary">Stack Sorting</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>2346</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">85</th>
+                        <td><a href="https://codeforces.com/problemset/problem/336/C" target="_blank" class="text-primary">Vasily the Bear and Sequence</a></td>
+                        <td>brute force, greedy, implementation, number theory</td>
+                        <td>2343</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">86</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1396/C" target="_blank" class="text-primary">Monster Invaders</a></td>
+                        <td>dp, greedy, implementation</td>
+                        <td>2293</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">87</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1201/D" target="_blank" class="text-primary">Treasure Hunting</a></td>
+                        <td>binary search, dp, greedy, implementation</td>
+                        <td>2027</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">88</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1358/E" target="_blank" class="text-primary">Are You Fired?</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>2006</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">89</th>
+                        <td><a href="https://codeforces.com/problemset/problem/509/C" target="_blank" class="text-primary">Sums of Digits</a></td>
+                        <td>dp, greedy, implementation</td>
+                        <td>1922</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">90</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1625/D" target="_blank" class="text-primary">Binary Spiders</a></td>
+                        <td>bitmasks, data structures, implementation, math, sortings, trees</td>
+                        <td>1850</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">91</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1617/D2" target="_blank" class="text-primary">Too Many Impostors (hard version)</a></td>
+                        <td>constructive algorithms, implementation, interactive, math</td>
+                        <td>1614</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">92</th>
+                        <td><a href="https://codeforces.com/problemset/problem/362/C" target="_blank" class="text-primary">Insertion Sort</a></td>
+                        <td>data structures, dp, implementation, math</td>
+                        <td>1556</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">93</th>
+                        <td><a href="https://codeforces.com/problemset/problem/285/D" target="_blank" class="text-primary">Permutation Sum</a></td>
+                        <td>bitmasks, combinatorics, dp, implementation, meet-in-the-middle</td>
+                        <td>1476</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    <tr>
+                        <th scope="row">94</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1329/C" target="_blank" class="text-primary">Drazil Likes Heap</a></td>
+                        <td>constructive algorithms, data structures, greedy, implementation</td>
+                        <td>1447</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">95</th>
+                        <td><a href="https://codeforces.com/problemset/problem/837/E" target="_blank" class="text-primary">Vasya's Function</a></td>
+                        <td>binary search, implementation, math</td>
+                        <td>1438</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">96</th>
+                        <td><a href="https://codeforces.com/problemset/problem/615/E" target="_blank" class="text-primary">Hexagons</a></td>
+                        <td>binary search, implementation, math</td>
+                        <td>947</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">97</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1574/E" target="_blank" class="text-primary">Coloring</a></td>
+                        <td>combinatorics, constructive algorithms, implementation, math</td>
+                        <td>825</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">98</th>
+                        <td><a href="https://codeforces.com/problemset/problem/501/E" target="_blank" class="text-primary">Misha and Palindrome Degree</a></td>
+                        <td>binary search, combinatorics, implementation</td>
+                        <td>708</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">99</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1422/E" target="_blank" class="text-primary">Minlexes</a></td>
+                        <td>dp, greedy, implementation, strings</td>
+                        <td>702</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">100</th>
+                        <td><a href="https://codeforces.com/problemset/problem/1860/F" target="_blank" class="text-primary">Evaluate RBS</a></td>
+                        <td>data structures, geometry, implementation, math, sortings</td>
+                        <td>230</td>
+                        <td><span class="badge bg-danger">Not Attempted</span></td>                    </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+
+            <!-- Top Selling -->
+            <!--<div class="col-12">
+              <div class="card top-selling overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top Selling <span>| Today</span></h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Preview</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Sold</th>
+                        <th scope="col">Revenue</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
+                        <td>$64</td>
+                        <td class="fw-bold">124</td>
+                        <td>$5,828</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
+                        <td>$46</td>
+                        <td class="fw-bold">98</td>
+                        <td>$4,508</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
+                        <td>$59</td>
+                        <td class="fw-bold">74</td>
+                        <td>$4,366</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
+                        <td>$32</td>
+                        <td class="fw-bold">63</td>
+                        <td>$2,016</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
+                        <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
+                        <td>$79</td>
+                        <td class="fw-bold">41</td>
+                        <td>$3,239</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div>-->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          <!-- Recent Activity -->
+          <!--<div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+
+              <div class="activity">
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">32 min</div>
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+                  <div class="activity-content">
+                    Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">56 min</div>
+                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                  <div class="activity-content">
+                    Voluptatem blanditiis blanditiis eveniet
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">2 hrs</div>
+                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+                  <div class="activity-content">
+                    Voluptates corrupti molestias voluptatem
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">1 day</div>
+                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+                  <div class="activity-content">
+                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">2 days</div>
+                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                  <div class="activity-content">
+                    Est sit eum reiciendis exercitationem
+                  </div>
+                </div>
+
+                <div class="activity-item d-flex">
+                  <div class="activite-label">4 weeks</div>
+                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+                  <div class="activity-content">
+                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>-->
+
+          <!-- Budget Report -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Tag Analysis <span>| Problems</span></h5>
+
+              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
+                    legend: {
+                      data: ['Tags', 'Actual Spending']
+                    },
+                    radar: {
+                      // shape: 'circle',
+                      indicator: [{
+                          name: 'dp',
+                          max: 266000/1.56
+                        },
+                        {
+                          name: 'string',
+                          max: 247000/1.56
+                        },
+                        {
+                          name: 'sorting',
+                          max: 256000/1.56
+                        },
+                        {
+                          name: 'binary search',
+                          max: 195000/1.56
+                        },
+                        {
+                          name: 'dfs',
+                          max: 129000/1.56
+                        },
+                        {
+                          name: 'two ptr',
+                          max: 126000/1.56
+                        }
+                      ]
+                    },
+                    series: [{
+                      name: 'Budget vs spending',
+                      type: 'radar',
+                      data: [{
+                          value: [70000, 70000, 70000, 70000, 70000, 70000],
+                          name: 'Tags'
+                        },
+                        // {
+                        //   value: [5000, 14000, 28000, 26000, 42000, 21000],
+                        //   name: 'Actual Spending'
+                        // }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div>
+          </div><!-- End Budget Report -->
+
+          <!-- Website Traffic -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Tags <span>| Top 5</span></h5>
+
+              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 631,
+                          name: 'Greedy'
+                        },
+                        {
+                          value: 563,
+                          name: 'Math'
+                        },
+                        {
+                          value: 527,
+                          name: 'Brute Force'
+                        },
+                        {
+                          value: 358,
+                          name: 'Constructive Algorithm'
+                        },
+                        {
+                          value: 337,
+                          name: 'Data Structure'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div>
+          </div><!-- End Website Traffic -->
+
+          <!-- News & Updates Traffic -->
+          <!--<div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+
+              <div class="news">
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-1.jpg" alt="">
+                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
+                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-2.jpg" alt="">
+                  <h4><a href="#">Quidem autem et impedit</a></h4>
+                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-3.jpg" alt="">
+                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-4.jpg" alt="">
+                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
+                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/news-5.jpg" alt="">
+                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>-->
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>WolfOutLadder</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
